@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:tcc/src/pages/Qr.code.dart';
-import 'package:tcc/src/pages/SplashScreen.dart';
-import 'package:tcc/src/pages/codigo.dart';
+import 'package:tcc/src/pages/CardapioPage.dart';
+import 'package:tcc/src/pages/Pedidos.dart';
+import 'package:tcc/src/pages/Login.dart';
+import 'package:tcc/src/pages/acesso.dart';
+import 'package:tcc/src/pages/Teclado.dart';
+import 'package:tcc/src/pages/Menu.dart';
 
 void main() => runApp(const tcc());
 
@@ -29,7 +32,10 @@ class tcc extends StatelessWidget {
       routes: {
         '/page1': (context) => QRCodePage(),
         '/page2': (context) => SplashScreen(),
-        '/page3': (context) => CodigoPage()
+        // '/page3': (context) => CodigoPage(),
+        '/Menu': (context) => Menu(),
+        '/CardapioPage': (context) => CardapioPage(),
+        '/Pedido': (context) => Pedido()
       },
       initialRoute: '/page2',
     );
